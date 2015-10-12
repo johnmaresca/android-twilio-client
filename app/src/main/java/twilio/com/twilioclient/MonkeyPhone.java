@@ -31,7 +31,7 @@ public class MonkeyPhone implements Twilio.InitListener {
         new HttpHandler(){
             @Override
             public HttpUriRequest getHttpRequestMethod(){
-                return new HttpGet(mContext.getString(R.string.app_capability_url));
+                return new HttpGet(mContext.getString(R.string.app_capability_url) + "?client=john");
             }
 
             @Override
